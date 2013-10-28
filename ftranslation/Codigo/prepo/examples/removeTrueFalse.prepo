@@ -1,0 +1,36 @@
+-(true)         ======> false;
+-(false)        ======> true;
+
+^(true,  X)     ======> X;
+^(false, X)     ======> false;
+^(X, true)      ======> X;
+^(X, false)     ======> false;
+
+v(true,  X)     ======> true;
+v(false, X)     ======> X;
+v(X, true)      ======> true;
+v(X, false)     ======> X;
+
+->(X, true)     =====> true;
+->(X, false)    =====> -(X);
+->(true, X)     =====> X;
+->(false, X)    =====> true;
+
+<->(true, X)    =====> X;
+<->(false, X)   =====> -(X);
+<->(X, true)    =====> X;
+<->(X, false)   =====> -(X);
+
+<>(rX, false)   =====> false;
+[](rX, true)    =====> true;
+
+@(nX, true)     =====> true;
+@(nX, false)    =====> false;
+
+A(true)         =====> true;
+A(false)        =====> false;
+E(true)         =====> true;
+E(false)        =====> false;
+
+down(xX, true)  =====> true;
+down(xX, false) =====> false;

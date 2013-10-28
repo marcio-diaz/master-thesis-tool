@@ -1,0 +1,145 @@
+
+--------------------------SPASS-START-----------------------------
+Input Problem:
+1[0:Inp] ||  -> P2(N1)* P5(skc32).
+2[0:Inp] || P3(N1)* -> P5(skc32).
+3[0:Inp] ||  -> equal(N1,skc19) P5(skc32)*.
+4[0:Inp] || equal(N1,skc19) -> P5(skc32)*.
+5[0:Inp] ||  -> P2(N3) P5(R1(U,N1))* Pde1(N1) P5(skc32).
+6[0:Inp] ||  -> equal(N3,skc17) P5(R1(U,N1))* Pde1(N1) P5(skc32).
+7[0:Inp] || P1(N3) -> P5(R1(U,N1))* Pde1(N1) P5(skc32).
+8[0:Inp] ||  -> equal(N3,skc18) P5(R1(U,N1))* Pde1(N1) P5(skc32).
+9[0:Inp] || SkP2(U,V)* equal(N1,N3) -> equal(V,N1).
+10[0:Inp] || Pde1(U) SkP6(V,U)* equal(U,U) -> .
+11[0:Inp] || equal(N3,skc17) -> P5(R1(U,N1))* Pde1(N1) P5(skc32).
+12[0:Inp] || equal(N3,N2) -> P5(R1(U,N1))* Pde1(N1) P5(skc32).
+13[0:Inp] || equal(N1,N3) -> P5(R1(U,N1))* Pde1(N1) P5(skc32).
+14[0:Inp] || equal(N1,U) SkP5(V,W,U)* equal(N1,W) -> .
+15[0:Inp] || SkP6(U,V) equal(V,V) -> equal(R1(U,V),N2)**.
+16[0:Inp] || equal(skc17,skc17) P4(skc17) -> P5(skc17) P3(skc17)* equal(N1,skc17).
+17[0:Inp] || SkP0(U,V,W,X)* -> equal(V,N1) SkP2(W,X) P1(N1).
+18[0:Inp] || equal(R1(U,V),V)** SkP6(U,V) equal(V,V) -> .
+19[0:Inp] || equal(R1(U,V),N1)** SkP6(U,V) equal(V,V) -> .
+20[0:Inp] || SkP3(U,V,W,X)* -> P2(V) equal(R1(X,R1(W,N1)),V)*.
+21[0:Inp] || equal(U,N2) SkP3(V,U,W,X)* -> equal(R1(X,R1(W,N1)),U)*.
+22[0:Inp] || equal(U,U) SkP3(V,U,W,X)* -> equal(R1(X,R1(W,N1)),U)*.
+23[0:Inp] ||  -> equal(N1,skc12) equal(R1(U,N1),N1)** Pde1(N1) SkP0(V,skf4(W),W,skc16)* P5(skc32).
+24[0:Inp] || Pde1(R1(U,R1(V,N1)))* SkP3(W,X,V,U)* -> equal(R1(U,R1(V,N1)),X)*.
+25[0:Inp] || Pde1(R1(U,R1(V,N1)))* SkP4(W,X,Y,V,U)* equal(R1(U,R1(V,N1)),Y) -> .
+26[0:Inp] || equal(R1(U,R1(V,R1(W,N1))),N1)** SkP3(U,X,W,V)* -> equal(R1(V,R1(W,N1)),X)*.
+27[0:Inp] || equal(R1(U,R1(V,R1(W,N1))),X)* SkP3(U,X,W,V)* -> equal(R1(V,R1(W,N1)),X).
+28[0:Inp] || SkP4(U,V,W,X,Y)* equal(R1(Y,R1(X,N1)),W) -> equal(U,R1(V,R1(Y,R1(X,N1))))*.
+29[0:Inp] || SkP4(U,V,W,X,Y)* equal(R1(Y,R1(X,N1)),W) -> equal(R1(V,R1(Y,R1(X,N1))),N1)**.
+30[0:Inp] || equal(R1(U,R1(V,R1(W,N1))),X)* SkP4(Y,U,X,W,V)* equal(R1(V,R1(W,N1)),X) -> .
+31[0:Inp] || SkP1(U,V,W,X,Y,Z,X1)* -> equal(Z,U) SkP6(V,Z) SkP4(W,X,Z,X1,Y) equal(R1(X1,N1),Z) Pde1(R1(X1,N1)).
+32[0:Inp] || SkP1(U,V,W,X,Y,Z,X1)* -> equal(Z,N2) SkP6(V,Z) SkP4(W,X,Z,X1,Y) equal(R1(X1,N1),Z) Pde1(R1(X1,N1)).
+33[0:Inp] || SkP1(U,V,W,X,Y,Z,X1)* -> equal(U,Z) SkP6(V,Z) SkP4(W,X,Z,X1,Y) equal(R1(X1,N1),Z) Pde1(R1(X1,N1)).
+34[0:Inp] || equal(U,U) SkP1(V,W,X,Y,Z,U,X1)* -> SkP6(W,U) SkP4(X,Y,U,X1,Z) equal(R1(X1,N1),U) Pde1(R1(X1,N1)).
+35[0:Inp] || P5(N1) equal(R1(U,N1),V) SkP0(U,V,W,X)* -> equal(N1,V) Pde1(N1) equal(R1(U,N1),N3) P2(R1(U,N1)) SkP2(W,X) P1(N1).
+36[0:Inp] || P3(N1) equal(N1,N2) P3(R1(U,N1)) equal(R1(U,N1),N1) P1(R1(U,N1))* SkP2(U,V)* equal(N1,N3) -> equal(N1,V) Pde1(N1).
+37[0:Inp] || P5(R1(U,R1(V,R1(W,N1))))* equal(R1(U,R1(V,R1(W,N1))),X)* SkP4(X,U,Y,W,V)* equal(R1(V,R1(W,N1)),Y) -> equal(R1(U,R1(V,R1(W,N1))),Y)*.
+38[0:Inp] || P1(R1(U,R1(V,R1(W,N1))))* -> equal(R1(U,R1(V,R1(W,N1))),N2) SkP1(skf9(W,X),skc20,skf10(W,X),skc21,X,skc19,W)* Pde1(R1(W,N1)) P3(R1(U,R1(V,R1(W,N1)))) Pde1(R1(V,R1(W,N1))) SkP3(skc22,skc19,W,V) Pde1(N1) P5(skc32).
+39[0:Inp] || P1(R1(U,R1(V,R1(W,N1))))* -> equal(R1(U,R1(V,R1(W,N1))),skf11(W,V,U)) SkP1(skf9(W,X),skc20,skf10(W,X),skc21,X,skc19,W)* Pde1(R1(W,N1)) P3(R1(U,R1(V,R1(W,N1)))) Pde1(R1(V,R1(W,N1))) SkP3(skc22,skc19,W,V) Pde1(N1) P5(skc32).
+40[0:Inp] || equal(R1(U,R1(V,R1(W,N1))),skf11(W,V,U)) P1(R1(U,R1(V,R1(W,N1))))* -> SkP1(skf9(W,X),skc20,skf10(W,X),skc21,X,skc19,W)* Pde1(R1(W,N1)) P3(R1(U,R1(V,R1(W,N1)))) Pde1(R1(V,R1(W,N1))) SkP3(skc22,skc19,W,V) Pde1(N1) P5(skc32).
+ This is a first-order Non-Horn problem containing equality.
+ This is a problem that contains sort information.
+ Axiom clauses: 40 Conjecture clauses: 0
+ Inferences: IEmS=1 ISoR=1 IEqR=1 IEqF=1 ISpR=1 ISpL=1 IORe=1 IOFc=1 
+ Reductions: RFRew=1 RBRew=1 RFMRR=1 RBMRR=1 RObv=1 RUnC=1 RTaut=1 RSSi=1 RFSub=1 RBSub=1 RAED=1 RCon=1 
+ Extras    : Input Saturation, Dynamic Selection, Full Splitting, Full Reduction,  Ratio: 5, FuncWeight: 1, VarWeight: 1
+ Precedence: skf8 > skf7 > skf6 > skf5 > R1 > skf11 > skf3 > skf10 > skf9 > skf2 > skf1 > skf4 > skf0 > Pde1 > P2 > SkP3 > SkP4 > SkP6 > SkP1 > SkP2 > P1 > P3 > P5 > P4 > SkP0 > SkP5 > skc32 > skc31 > skc30 > skc29 > skc28 > skc27 > skc26 > skc25 > skc24 > skc23 > skc22 > skc21 > skc20 > N1 > skc19 > N3 > skc18 > skc17 > skc16 > skc15 > skc14 > skc13 > skc12 > skc11 > skc10 > skc9 > skc8 > skc7 > skc6 > skc5 > skc4 > skc3 > skc2 > skc1 > skc0 > N2
+ Ordering  : KBO
+Processed Problem:
+
+Worked Off Clauses:
+
+Usable Clauses:
+44[0:Obv:43.0] ||  -> P5(skc32)*.
+45[0:Obv:10.2] Pde1(U) || SkP6(V,U)* -> .
+48[0:Rew:46.1,47.0] || SkP6(U,V)* equal(N1,N2) -> .
+50[0:Rew:46.1,49.0] || SkP6(U,V)* equal(N2,V) -> .
+46[0:Obv:15.1] || SkP6(U,V) -> equal(R1(U,V),N2)**.
+51[0:Obv:16.0] || P4(skc17) -> P3(skc17)* P5(skc17) equal(N1,skc17).
+9[0:Inp] || SkP2(U,V)* equal(N1,N3) -> equal(V,N1).
+14[0:Inp] || equal(N1,U) equal(N1,V) SkP5(W,U,V)* -> .
+52[0:Obv:22.0] || SkP3(U,V,W,X)* -> equal(R1(X,R1(W,N1)),V)*.
+17[0:Inp] || SkP0(U,V,W,X)* -> P1(N1) SkP2(W,X) equal(V,N1).
+53[0:Rew:29.2,28.2] || equal(R1(U,R1(V,N1)),W) SkP4(X,Y,W,V,U)* -> equal(X,N1).
+54[0:Rew:29.2,30.0] || equal(N1,U) equal(R1(V,R1(W,N1)),U) SkP4(X,Y,U,W,V)* -> .
+25[0:Inp] || Pde1(R1(U,R1(V,N1)))* equal(R1(U,R1(V,N1)),W) SkP4(X,Y,W,V,U)* -> .
+57[0:MRR:56.4,54.0] || P5(N1) equal(N1,U) equal(R1(V,R1(W,N1)),X) SkP4(U,Y,X,W,V)* -> .
+29[0:Inp] || equal(R1(U,R1(V,N1)),W) SkP4(X,Y,W,V,U)* -> equal(R1(Y,R1(U,R1(V,N1))),N1)**.
+55[0:Obv:34.0] || SkP1(U,V,W,X,Y,Z,X1)* -> Pde1(R1(X1,N1)) SkP6(V,Z) equal(R1(X1,N1),Z) SkP4(W,X,Z,X1,Y).
+	Given clause: 51[0:Obv:16.0] || P4(skc17) -> P3(skc17)* P5(skc17) equal(N1,skc17).
+	Given clause: 58[1:Spt:51.3] ||  -> equal(N1,skc17)**.
+	Given clause: 44[0:Obv:43.0] ||  -> P5(skc32)*.
+	Given clause: 45[0:Obv:10.2] Pde1(U) || SkP6(V,U)* -> .
+	Given clause: 67[1:Rew:58.0,48.1] || SkP6(U,V)* equal(skc17,N2) -> .
+	Given clause: 50[0:Rew:46.1,49.0] || SkP6(U,V)* equal(N2,V) -> .
+	Given clause: 46[0:Obv:15.1] || SkP6(U,V) -> equal(R1(U,V),N2)**.
+	Given clause: 70[1:Rew:58.0,60.1] || SkP2(U,V)* equal(N3,skc17) -> equal(V,skc17).
+	Given clause: 71[1:Rew:58.0,63.1] || equal(skc17,U) equal(skc17,V) SkP5(W,U,V)* -> .
+	Given clause: 68[1:Rew:58.0,52.1] || SkP3(U,V,W,X)*+ -> equal(R1(X,R1(W,skc17)),V)*.
+	Given clause: 72[1:Rew:58.0,59.1] || SkP0(U,V,W,X)* -> P1(skc17) SkP2(W,X) equal(V,skc17).
+	Given clause: 81[2:Spt:72.0,72.2,72.3] || SkP0(U,V,W,X)* -> SkP2(W,X) equal(V,skc17).
+	Given clause: 73[1:Rew:58.0,66.2] || equal(R1(U,R1(V,skc17)),W) SkP4(X,Y,W,V,U)* -> equal(X,skc17).
+	Given clause: 74[1:Rew:58.0,62.1] || equal(skc17,U) equal(R1(V,R1(W,skc17)),U) SkP4(X,Y,U,W,V)* -> .
+	Given clause: 75[1:Rew:58.0,61.2,58.0,61.0] || P5(skc17) equal(skc17,U) equal(R1(V,R1(W,skc17)),X) SkP4(U,Y,X,W,V)* -> .
+	Given clause: 76[1:Rew:58.0,65.0] || Pde1(R1(U,R1(V,skc17)))* equal(R1(U,R1(V,skc17)),W)+ SkP4(X,Y,W,V,U)* -> .
+	Given clause: 82[1:EqR:76.1] || Pde1(R1(U,R1(V,skc17))) SkP4(W,X,R1(U,R1(V,skc17)),V,U)* -> .
+	Given clause: 77[1:Rew:58.0,64.2] || equal(R1(U,R1(V,skc17)),W)+ SkP4(X,Y,W,V,U)* -> equal(R1(Y,R1(U,R1(V,skc17))),skc17)**.
+	Given clause: 89[1:Rew:46.1,88.1] || SkP6(U,R1(V,skc17)) Pde1(N2) SkP4(W,X,N2,V,U)* -> .
+	Given clause: 90[1:Rew:46.1,87.1] || SkP6(U,skc17) Pde1(R1(V,N2)) SkP4(W,X,R1(V,N2),U,V)* -> .
+	Given clause: 97[1:Rew:46.1,96.2] || SkP6(U,N2) SkP6(V,skc17) Pde1(N2) SkP4(W,X,N2,V,U)* -> .
+	Given clause: 85[1:Rew:46.1,84.1] || SkP6(U,R1(V,skc17)) Pde1(N2) equal(N2,W) SkP4(X,Y,W,V,U)* -> .
+	Given clause: 78[1:Rew:58.0,69.3] || SkP1(U,V,W,X,Y,Z,X1)* -> Pde1(R1(X1,skc17)) SkP6(V,Z) equal(R1(X1,skc17),Z) SkP4(W,X,Z,X1,Y).
+	Given clause: 91[1:EqR:77.0] || SkP4(U,V,R1(W,R1(X,skc17)),X,W)* -> equal(R1(V,R1(W,R1(X,skc17))),skc17).
+	Given clause: 100[1:Rew:46.1,99.2] || SkP6(U,R1(V,skc17)) SkP4(W,X,N2,V,U)* -> equal(R1(X,N2),skc17).
+	Given clause: 101[1:Rew:46.1,98.2] || SkP6(U,skc17) SkP4(V,W,R1(X,N2),U,X)* -> equal(R1(W,R1(X,N2)),skc17).
+	Given clause: 103[1:Rew:46.1,102.3] || SkP6(U,N2) SkP6(V,skc17) SkP4(W,X,N2,V,U)* -> equal(R1(X,N2),skc17).
+	Given clause: 86[1:Rew:46.1,83.1] || SkP6(U,skc17) Pde1(R1(V,N2)) equal(R1(V,N2),W) SkP4(X,Y,W,U,V)* -> .
+	Given clause: 94[1:Rew:46.1,93.3] || SkP6(U,R1(V,skc17)) equal(N2,W) SkP4(X,Y,W,V,U)* -> equal(R1(Y,N2),skc17).
+	Given clause: 95[1:Rew:46.1,92.3] || SkP6(U,skc17) equal(R1(V,N2),W) SkP4(X,Y,W,U,V)* -> equal(R1(Y,R1(V,N2)),skc17).
+SPASS V 3.7 
+SPASS beiseite: Completion found.
+Problem: testsin 
+SPASS derived 29 clauses, backtracked 0 clauses, performed 2 splits and kept 49 clauses.
+SPASS allocated 52838 KBytes.
+SPASS spent	0:00:00.10 on the problem.
+		0:00:00.02 for the input.
+		0:00:00.06 for the FLOTTER CNF translation.
+		0:00:00.00 for inferences.
+		0:00:00.00 for the backtracking.
+		0:00:00.00 for the reduction.
+
+
+ The saturated set of worked-off clauses is :
+95[1:Rew:46.1,92.3] || SkP6(U,skc17) equal(R1(V,N2),W) SkP4(X,Y,W,U,V)* -> equal(R1(Y,R1(V,N2)),skc17).
+94[1:Rew:46.1,93.3] || SkP6(U,R1(V,skc17)) equal(N2,W) SkP4(X,Y,W,V,U)* -> equal(R1(Y,N2),skc17).
+86[1:Rew:46.1,83.1] || SkP6(U,skc17) Pde1(R1(V,N2)) equal(R1(V,N2),W) SkP4(X,Y,W,U,V)* -> .
+103[1:Rew:46.1,102.3] || SkP6(U,N2) SkP6(V,skc17) SkP4(W,X,N2,V,U)* -> equal(R1(X,N2),skc17).
+101[1:Rew:46.1,98.2] || SkP6(U,skc17) SkP4(V,W,R1(X,N2),U,X)* -> equal(R1(W,R1(X,N2)),skc17).
+100[1:Rew:46.1,99.2] || SkP6(U,R1(V,skc17)) SkP4(W,X,N2,V,U)* -> equal(R1(X,N2),skc17).
+91[1:EqR:77.0] || SkP4(U,V,R1(W,R1(X,skc17)),X,W)* -> equal(R1(V,R1(W,R1(X,skc17))),skc17).
+78[1:Rew:58.0,69.3] || SkP1(U,V,W,X,Y,Z,X1)* -> Pde1(R1(X1,skc17)) SkP6(V,Z) equal(R1(X1,skc17),Z) SkP4(W,X,Z,X1,Y).
+85[1:Rew:46.1,84.1] || SkP6(U,R1(V,skc17)) Pde1(N2) equal(N2,W) SkP4(X,Y,W,V,U)* -> .
+97[1:Rew:46.1,96.2] || SkP6(U,N2) SkP6(V,skc17) Pde1(N2) SkP4(W,X,N2,V,U)* -> .
+90[1:Rew:46.1,87.1] || SkP6(U,skc17) Pde1(R1(V,N2)) SkP4(W,X,R1(V,N2),U,V)* -> .
+89[1:Rew:46.1,88.1] || SkP6(U,R1(V,skc17)) Pde1(N2) SkP4(W,X,N2,V,U)* -> .
+77[1:Rew:58.0,64.2] || equal(R1(U,R1(V,skc17)),W)+ SkP4(X,Y,W,V,U)* -> equal(R1(Y,R1(U,R1(V,skc17))),skc17)**.
+82[1:EqR:76.1] || Pde1(R1(U,R1(V,skc17))) SkP4(W,X,R1(U,R1(V,skc17)),V,U)* -> .
+76[1:Rew:58.0,65.0] || Pde1(R1(U,R1(V,skc17)))* equal(R1(U,R1(V,skc17)),W)+ SkP4(X,Y,W,V,U)* -> .
+75[1:Rew:58.0,61.2,58.0,61.0] || P5(skc17) equal(skc17,U) equal(R1(V,R1(W,skc17)),X) SkP4(U,Y,X,W,V)* -> .
+74[1:Rew:58.0,62.1] || equal(skc17,U) equal(R1(V,R1(W,skc17)),U) SkP4(X,Y,U,W,V)* -> .
+73[1:Rew:58.0,66.2] || equal(R1(U,R1(V,skc17)),W) SkP4(X,Y,W,V,U)* -> equal(X,skc17).
+81[2:Spt:72.0,72.2,72.3] || SkP0(U,V,W,X)* -> SkP2(W,X) equal(V,skc17).
+68[1:Rew:58.0,52.1] || SkP3(U,V,W,X)*+ -> equal(R1(X,R1(W,skc17)),V)*.
+71[1:Rew:58.0,63.1] || equal(skc17,U) equal(skc17,V) SkP5(W,U,V)* -> .
+70[1:Rew:58.0,60.1] || SkP2(U,V)* equal(N3,skc17) -> equal(V,skc17).
+46[0:Obv:15.1] || SkP6(U,V) -> equal(R1(U,V),N2)**.
+50[0:Rew:46.1,49.0] || SkP6(U,V)* equal(N2,V) -> .
+67[1:Rew:58.0,48.1] || SkP6(U,V)* equal(skc17,N2) -> .
+45[0:Obv:10.2] Pde1(U) || SkP6(V,U)* -> .
+44[0:Obv:43.0] ||  -> P5(skc32)*.
+58[1:Spt:51.3] ||  -> equal(N1,skc17)**.
+--------------------------SPASS-STOP------------------------------

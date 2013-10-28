@@ -1,0 +1,10 @@
+.include "toNNF.prepo"
+.include "removeTrueFalse.prepo"
+
+<>(rZ, @(nX, Y))              =====> ^(@(nX, Y), <>(rZ, true));
+[](rZ, @(nX, Y))              =====> v(@(nX, Y), [](rZ, false));
+
+{<>[]}[... .*[... @(nX, Y) ...] ...] ====> v(^(  @(nX, Y), {<>[]}[... .*[... true ...] ...]),
+                                             ^(-(@(nX, Y)), {<>[]}[... .*[... false ...] ...]));
+
+@(Z, @(nX, Y)) ========> @(nX, Y);

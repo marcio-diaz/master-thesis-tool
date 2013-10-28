@@ -1,0 +1,7 @@
+[LeveLogger]
+file = reasoning.log
+allowedLevel = 0
+[Tuning]
+[Query]
+Target =  Proof
+TBox = TEST.tbox

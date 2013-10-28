@@ -1,0 +1,21 @@
+begin_problem(functionalTranslated).
+
+ list_of_descriptions.
+  name({*Optimized Functional Translation for H(@,!)*}).
+  author({*eagerSortsRemTrans-spass*}).
+  logic({*H(@,!)*}).
+  status(unknown).
+  description({*Vacia*}).
+ end_of_list.
+
+ list_of_symbols.
+  functions[(X1, 0), (R1, 2),(R1, 2)].
+  predicates[(P1,1),(P2,1),(P3,1),(Pde1, 1), (P1, 1)].
+ end_of_list.
+
+ list_of_formulae(axioms).
+  formula(or(Pde1(X1), forall([X2], P1(R1(X2, X1))))).
+  formula(or(Pde1(X1), forall([X2], not(P1(R1(X2, X1)))))).
+ end_of_list.
+
+end_problem.

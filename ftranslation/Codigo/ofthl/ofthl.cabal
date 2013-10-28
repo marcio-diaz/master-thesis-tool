@@ -1,0 +1,232 @@
+Name:                ofthl
+Version:             0.1
+Description:         optimized functional translation for hybrid logic
+Author:              Marcio Díaz
+Maintainer:	     marcio.diaz@gmail.com
+Stability:           Experimental
+Cabal-version:       >= 1.2
+Build-type:          Simple
+
+Flag static
+  Description: Build a static binary
+  Default:     False
+
+
+Executable         fthl-spass
+  Main-is:             fthl-spass.hs
+  Build-Depends:       base >= 3, 
+                       mtl >= 1, 
+                       containers,
+                       prepo
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+
+Executable         pnffthl-spass
+  Main-is:             pnffthl-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+Executable         withSorts-spass
+  Main-is:             withSorts-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+
+
+Executable         withSortsAllIn-spass
+  Main-is:             withSortsAllIn-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+Executable         withSortsAllOut-spass
+  Main-is:             withSortsAllOut-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+
+Executable         withoutSorts-spass
+  Main-is:             withoutSorts-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+
+
+
+Executable         ufthl-spass
+  Main-is:             ufthl-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+Executable         ufthl-tptp
+  Main-is:             ufthl-tptp.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+
+Executable         ofthl-spass
+  Main-is:             ofthl-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+Executable         removeImpTrans-spass
+  Main-is:             removeImpTrans-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+Executable         moveNegInTrans-spass
+  Main-is:             moveNegInTrans-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+Executable         eagerSortsRemTrans-spass
+  Main-is:             eagerSortsRemTrans-spass.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+
+Executable         modal-spass
+  Main-is:             modal-spass.hs
+  Build-Depends:       base >= 3, 
+                       mtl >= 1, 
+                       containers,
+                       prepo
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+Executable         modal-spass2
+  Main-is:             modal-spass2.hs
+  Build-Depends:       base >= 3, 
+                       mtl >= 1, 
+                       containers,
+                       prepo
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+
+
+Executable         ofthl-tptp
+  Main-is:             ofthl-tptp.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+Executable         funcTrans-tptp
+  Main-is:		funcTrans-tptp.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+Executable         pnfFuncTrans-tptp
+  Main-is:		pnfFuncTrans-tptp.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+
+
+Executable         withSorts-tptp
+  Main-is:             withSorts-tptp.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+
+Executable         withoutSorts-tptp
+  Main-is:             withoutSorts-tptp.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+
+Executable         eagerSortsRemTrans-tptp
+  Main-is:             eagerSortsRemTrans-tptp.hs
+  Hs-Source-Dirs:      src
+  ghc-options:         -O2 -Wall 
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread

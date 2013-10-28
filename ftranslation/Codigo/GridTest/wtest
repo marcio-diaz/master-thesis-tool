@@ -1,0 +1,31 @@
+begin_problem(functionalTranslated).
+
+ list_of_descriptions.
+  name({*Functional Translation for H(@,!)*}).
+  author({*withSorts-spass*}).
+  logic({*H(@,!)*}).
+  status(unknown).
+  description({*Vacia*}).
+ end_of_list.
+
+ list_of_symbols.
+  functions[(b, 0), (X1, 0),(R1, 2)].
+  predicates[(P1,1),(P2,1),(P3,1),(Pde1, 1), (P3, 1)].
+   sorts[omega, iota].
+ end_of_list.
+
+list_of_declarations.
+omega(X1).
+iota(b).
+forall([omega(X), iota(Y)], omega(R1(Y, X))).
+end_of_list.
+
+ list_of_formulae(axioms).
+formula(forall([omega(X)], implies(P1(X), exists([omega(Y)], and(not(Pde1(X)),and(exists([iota(Z)],equal(R1(Z,X),Y)),P1(Y))))))).
+formula(forall([omega(X)], implies(P2(X), exists([omega(Y)], and(not(Pde1(X)),and(exists([iota(Z)],equal(R1(Z,X),Y)),P2(Y))))))).
+formula(forall([omega(X)], implies(P3(X), exists([omega(Y)], and(not(Pde1(X)),and(exists([iota(Z)],equal(R1(Z,X),Y)),P3(Y))))))).
+  formula(exists([iota(X3)], exists([iota(X2)], and(not(Pde1(X1)), and(P3(R1(X2, X1)), and(not(Pde1(R1(X2, X1))), P3(R1(X3, R1(X2, X1))))))))).
+  formula(exists([iota(X2)], forall([iota(X3)], and(not(Pde1(X1)), and(not(P3(R1(X2, X1))), or(Pde1(R1(X2, X1)), P3(R1(X3, R1(X2, X1))))))))).
+ end_of_list.
+
+end_problem.

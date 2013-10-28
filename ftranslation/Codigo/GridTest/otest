@@ -1,0 +1,35 @@
+begin_problem(functionalTranslated).
+
+ list_of_descriptions.
+  name({*Functional Translation for H(@,!)*}).
+  author({*withSorts-spass*}).
+  logic({*H(@,!)*}).
+  status(unknown).
+  description({*Vacia*}).
+ end_of_list.
+
+ list_of_symbols.
+  functions[(b, 0), (X1, 0),(R1, 2)].
+  predicates[(P2, 1), (Pde1, 1), (P1, 1), (P3, 1)].
+   sorts[omega, iota].
+ end_of_list.
+
+list_of_declarations.
+omega(X1).
+iota(b).
+forall([omega(X), iota(Y)], omega(R1(Y, X))).
+end_of_list.
+
+ list_of_formulae(axioms).
+formula(forall([omega(X)], and(not(Pde1(X)), exists([iota(Z)], equal(R1(Z,X), X))))).
+  formula(forall([iota(X2)], forall([iota(X3)], forall([iota(X4)], or(not(P2(X1)), or(Pde1(X1), or(or(P1(R1(X2, X1)), not(P3(R1(X2, X1)))), or(Pde1(R1(X2, X1)), or(or(not(P1(R1(X3, R1(X2, X1)))), P2(R1(X3, R1(X2, X1)))), or(Pde1(R1(X3, R1(X2, X1))), or(or(P2(R1(X4, R1(X3, R1(X2, X1)))), not(P1(R1(X4, R1(X3, R1(X2, X1)))))), P3(R1(X4, R1(X3, R1(X2, X1))))))))))))))).
+  formula(forall([iota(X2)], forall([iota(X3)], forall([iota(X4)], or(not(P1(X1)), or(Pde1(X1), or(not(P2(R1(X2, X1))), or(Pde1(R1(X2, X1)), or(not(P1(R1(X3, R1(X2, X1)))), or(Pde1(R1(X3, R1(X2, X1))), or(not(P2(R1(X4, R1(X3, R1(X2, X1))))), P1(R1(X4, R1(X3, R1(X2, X1))))))))))))))).
+  formula(exists([iota(X4)], exists([iota(X3)], exists([iota(X2)], or(not(P2(X1)), and(not(Pde1(X1)), and(and(P3(R1(X2, X1)), not(P1(R1(X2, X1)))), and(not(Pde1(R1(X2, X1))), and(P2(R1(X3, R1(X2, X1))), and(not(Pde1(R1(X3, R1(X2, X1)))), and(and(not(P1(R1(X4, R1(X3, R1(X2, X1))))), not(P2(R1(X4, R1(X3, R1(X2, X1)))))), P3(R1(X4, R1(X3, R1(X2, X1))))))))))))))).
+  formula(exists([iota(X2)], forall([iota(X3)], forall([iota(X4)], or(not(P2(X1)), and(not(Pde1(X1)), and(not(P1(R1(X2, X1))), or(Pde1(R1(X2, X1)), or(P1(R1(X3, R1(X2, X1))), or(Pde1(R1(X3, R1(X2, X1))), or(P1(R1(X4, R1(X3, R1(X2, X1)))), P2(R1(X4, R1(X3, R1(X2, X1))))))))))))))).
+  formula(exists([iota(X3)], forall([iota(X2)], forall([iota(X4)], or(P1(X1), or(Pde1(X1), or(or(not(P2(R1(X2, X1))), not(P3(R1(X2, X1)))), and(not(Pde1(R1(X2, X1))), and(not(P3(R1(X3, R1(X2, X1)))), or(Pde1(R1(X3, R1(X2, X1))), or(P3(R1(X4, R1(X3, R1(X2, X1)))), P2(R1(X4, R1(X3, R1(X2, X1))))))))))))))).
+  formula(exists([iota(X4)], forall([iota(X2)], forall([iota(X3)], or(or(P3(X1), P1(X1)), or(Pde1(X1), or(or(P1(R1(X2, X1)), P3(R1(X2, X1))), or(Pde1(R1(X2, X1)), or(not(P3(R1(X3, R1(X2, X1)))), and(not(Pde1(R1(X3, R1(X2, X1)))), and(and(not(P3(R1(X4, R1(X3, R1(X2, X1))))), P1(R1(X4, R1(X3, R1(X2, X1))))), not(P2(R1(X4, R1(X3, R1(X2, X1)))))))))))))))).
+  formula(exists([iota(X4)], forall([iota(X2)], forall([iota(X3)], or(P1(X1), or(Pde1(X1), or(not(P2(R1(X2, X1))), or(Pde1(R1(X2, X1)), or(not(P2(R1(X3, R1(X2, X1)))), and(not(Pde1(R1(X3, R1(X2, X1)))), and(not(P3(R1(X4, R1(X3, R1(X2, X1))))), not(P2(R1(X4, R1(X3, R1(X2, X1)))))))))))))))).
+  formula(exists([iota(X4)], exists([iota(X3)], exists([iota(X2)], or(P2(X1), and(not(Pde1(X1)), and(and(P2(R1(X2, X1)), P3(R1(X2, X1))), and(not(Pde1(R1(X2, X1))), and(P1(R1(X3, R1(X2, X1))), and(not(Pde1(R1(X3, R1(X2, X1)))), and(and(P2(R1(X4, R1(X3, R1(X2, X1)))), not(P3(R1(X4, R1(X3, R1(X2, X1)))))), not(P1(R1(X4, R1(X3, R1(X2, X1)))))))))))))))).
+ end_of_list.
+
+end_problem.

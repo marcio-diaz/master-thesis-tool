@@ -1,0 +1,12 @@
+.include "expandImpAndDimp.prepo"
+
+# These rules push negations inwards
+-(<>(rX, Y))   ======> [](rX, -(Y));
+-([](rX, Y))   ======> <>(rX, -(Y));
+-(@(X, Y))     ======> @(X, -(Y));
+-(A(X))        ======> E(-(X));
+-(E(X))        ======> A(-(X));
+-(down(xX, Y)) ======> down(xX, -(Y));
+-(-(X))        ======> X;
+-(^(X, Y))     ======> v(-(X), -(Y));
+-(v(X, Y))     ======> ^(-(X), -(Y));

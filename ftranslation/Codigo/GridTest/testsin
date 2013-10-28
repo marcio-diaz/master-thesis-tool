@@ -1,0 +1,20 @@
+begin_problem(functionalTranslated).
+
+ list_of_descriptions.
+  name({*Optimized Functional Translation for H(@,!)*}).
+  author({*withoutSorts-spass*}).
+  logic({*H(@,!)*}).
+  status(unknown).
+  description({*Vacia*}).
+ end_of_list.
+
+ list_of_symbols.
+  functions[(R1, 2), (N1, 0), (N3, 0), (N2, 0)].
+  predicates[(P5, 1), (P3, 1), (Pde1, 1), (P1, 1), (P4, 1), (P2, 1)].
+ end_of_list.
+
+ list_of_formulae(axioms).
+  formula(exists([X4], exists([X8], exists([X5], exists([X13], exists([X1], forall([X9], forall([X10], exists([S6], exists([S7], exists([S8], forall([X11], exists([S9], forall([X12], exists([S10], exists([S2], exists([S11], exists([S3], forall([X2], forall([X6], forall([X3], forall([X7], exists([S4], exists([S5], exists([S1], or(P5(X1), and(and(and(not(P3(N1)), or(Pde1(N1), or(P5(R1(X9, N1)), and(and(and(not(P1(N3)), not(equal(N3, N2))), and(equal(S6, N3), and(not(equal(N3, S6)), or(or(or(P5(S6), P3(S6)), not(equal(S6, S6))), or(or(equal(S6, N1), P5(S6)), not(P4(S6))))))), and(and(not(equal(N3, N1)), P2(N3)), and(equal(S7, N3), or(or(not(P3(N3)), not(equal(N3, S7))), or(or(equal(S7, S7), P5(S7)), not(equal(S7, S7)))))))))), or(Pde1(N1), or(equal(R1(X10, N1), N1), or(or(P1(N1), or(or(not(equal(N1, N3)), and(equal(S8, N1), or(or(or(not(P3(N1)), equal(N1, S8)), not(equal(N1, N2))), or(Pde1(N1), or(or(not(P3(R1(X11, N1))), not(equal(R1(X11, N1), N1))), not(P1(R1(X11, N1)))))))), and(equal(S9, N1), or(or(equal(N1, S9), not(P5(N1))), or(Pde1(N1), or(or(equal(R1(X12, N1), N3), not(equal(R1(X12, N1), S9))), P2(R1(X12, N1)))))))), and(equal(S10, N1), or(not(P3(N1)), and(equal(S2, N1), or(or(or(not(equal(N1, S2)), not(equal(N1, S10))), and(equal(S11, N1), and(and(not(equal(N1, S11)), not(equal(N1, S2))), not(equal(N1, S2))))), or(or(P1(S10), equal(S10, N3)), and(not(Pde1(S10)), and(and(equal(R1(X13, S10), S10), P1(R1(X13, S10))), P2(R1(X13, S10))))))))))))), and(equal(S3, N1), and(and(not(equal(N1, S3)), P2(N1)), or(Pde1(N1), or(or(equal(R1(X2, N1), S3), or(Pde1(R1(X2, N1)), or(or(not(equal(R1(X6, R1(X2, N1)), S3)), and(not(Pde1(R1(X6, R1(X2, N1)))), and(and(equal(R1(X5, R1(X6, R1(X2, N1))), N1), not(equal(R1(X5, R1(X6, R1(X2, N1))), S3))), and(equal(S4, R1(X5, R1(X6, R1(X2, N1)))), or(or(equal(R1(X5, R1(X6, R1(X2, N1))), S3), not(P5(R1(X5, R1(X6, R1(X2, N1)))))), not(equal(R1(X5, R1(X6, R1(X2, N1))), S4))))))), or(or(not(equal(S3, S3)), and(not(Pde1(S3)), and(and(equal(R1(X8, S3), N2), not(equal(R1(X8, S3), S3))), not(equal(R1(X8, S3), N1))))), and(equal(S5, S3), and(and(equal(S3, N2), equal(S3, S5)), not(equal(S3, S3)))))))), or(Pde1(R1(X2, N1)), or(or(equal(R1(X3, R1(X2, N1)), S3), and(not(Pde1(R1(X3, R1(X2, N1)))), and(and(not(equal(R1(X4, R1(X3, R1(X2, N1))), S3)), not(equal(R1(X4, R1(X3, R1(X2, N1))), N1))), and(and(not(equal(S3, N2)), P2(S3)), not(equal(S3, S3)))))), or(Pde1(R1(X3, R1(X2, N1))), or(or(not(P1(R1(X7, R1(X3, R1(X2, N1))))), P3(R1(X7, R1(X3, R1(X2, N1))))), and(equal(S1, R1(X7, R1(X3, R1(X2, N1)))), and(and(equal(R1(X7, R1(X3, R1(X2, N1))), N2), equal(R1(X7, R1(X3, R1(X2, N1))), S1)), not(equal(R1(X7, R1(X3, R1(X2, N1))), S1))))))))))))))))))))))))))))))))))))))).
+ end_of_list.
+
+end_problem.

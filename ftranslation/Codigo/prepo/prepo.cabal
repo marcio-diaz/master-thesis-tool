@@ -1,0 +1,49 @@
+Name:                prepo
+Version:             1.0
+Homepage:            http://www.glyc.dc.uba.ar/daniel/repos/prepo/
+Description:         hybrid formula preprocessor
+Author:              Daniel Gorín
+Maintainer:
+Cabal-version:       >= 1.2
+Build-type:          Simple
+
+Flag static
+  Description: Build a static binary
+  Default:     False
+
+Library
+  Build-Depends:       base >= 3, 
+                       mtl >= 1, 
+                       filepath > 1, 
+                       directory > 1, 
+                       array
+  Exposed-modules:     Prepo.AST
+                       Prepo.HyLoAST
+                       Prepo.HyLoASTBuilder
+  Other-modules:       Prepo.HyLoLexer
+  hs-source-dirs:      src
+  ghc-options:         -Wall -O2
+  ghc-prof-options:    -auto-all
+
+Executable          prepo
+  Main-is:             prepo.hs
+  Hs-Source-Dirs:      src
+  Build-Depends:       base >= 3, 
+                       mtl >= 1, 
+                       containers < 1,
+                       filepath > 1, 
+                       directory > 1, 
+                       array
+  Other-modules:       Prepo.RewriteRulesParser
+                       Prepo.RewriteRulesLexer
+                       Prepo.HyLoLexer
+  ghc-options:         -O2 -Wall 
+
+
+  extensions: 	       ForeignFunctionInterface, UnliftedFFITypes, ImplicitParams, ScopedTypeVariables, UnboxedTuples, TypeSynonymInstances, StandaloneDeriving, DeriveDataTypeable, DeriveFunctor, DeriveFoldable, DeriveTraversable, FlexibleContexts, FlexibleInstances, ConstrainedClassMethods, MultiParamTypeClasses, FunctionalDependencies, MagicHash, PolymorphicComponents, ExistentialQuantification, UnicodeSyntax, PostfixOperators, PatternGuards, LiberalTypeSynonyms, RankNTypes, TypeOperators, DoRec, ParallelListComp, EmptyDataDecls, KindSignatures, GeneralizedNewtypeDeriving
+
+  ghc-prof-options:    -auto-all
+
+  if flag(static)
+    ghc-options: -static -optl-static -optl-pthread
+

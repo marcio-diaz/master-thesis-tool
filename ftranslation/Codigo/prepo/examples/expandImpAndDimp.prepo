@@ -1,0 +1,4 @@
+# These rules replace implications and double implications with conjunctions, 
+# disjunctions and negations
+ ->(X, Y) =========> v(-(X), Y);
+<->(X, Y) =========> ^(->(X, Y), ->(Y, X));

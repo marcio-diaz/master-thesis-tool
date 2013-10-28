@@ -1,0 +1,215 @@
+
+--------------------------SPASS-START-----------------------------
+Input Problem:
+1[0:Inp] ||  -> omega(skc9)*.
+2[0:Inp] ||  -> iota(skc8)*.
+3[0:Inp] ||  -> iota(skc7)*.
+4[0:Inp] ||  -> iota(skc6)*.
+5[0:Inp] ||  -> iota(skc5)*.
+6[0:Inp] ||  -> omega(a)*.
+7[0:Inp] ||  -> iota(b)*.
+8[0:Inp] ||  -> omega(skf13(U,V))*.
+9[0:Inp] ||  -> omega(skf12(U,V))*.
+10[0:Inp] ||  -> omega(skf11(U,V))*.
+11[0:Inp] ||  -> omega(skf14(U,V,W))*.
+12[0:Inp] ||  -> omega(skf18(U,V,W,X))*.
+13[0:Inp] ||  -> omega(skf17(U,V,W,X))*.
+14[0:Inp] ||  -> omega(skf16(U,V,W,X))*.
+15[0:Inp] ||  -> omega(skf15(U,V,W,X))*.
+16[0:Inp] || iota(U)* -> P2(N1)* P5(skc9).
+17[0:Inp] || P3(N1)* iota(U)* -> P5(skc9).
+18[0:Inp] ||  -> omega(skf21(U,V,W,X,Y,Z,X1,X2))*.
+19[0:Inp] ||  -> omega(skf20(U,V,W,X,Y,Z,X1,X2))*.
+20[0:Inp] ||  -> omega(skf19(U,V,W,X,Y,Z,X1,X2))*.
+21[0:Inp] || SkP2(U,V)* equal(N1,N3) -> equal(V,N1).
+22[0:Inp] || Pde1(U) SkP6(V,U)* equal(U,U) -> .
+23[0:Inp] || iota(U) -> P2(N3) Pde1(N1) P5(R1(U,N1))* P5(skc9).
+24[0:Inp] || equal(N1,U) SkP5(V,W,U)* equal(N1,W) -> .
+25[0:Inp] || SkP6(U,V) equal(V,V) -> equal(R1(U,V),N2)**.
+26[0:Inp] || P1(N3) iota(U) -> Pde1(N1) P5(R1(U,N1))* P5(skc9).
+27[0:Inp] || SkP0(U,V,W,X)* -> equal(V,N1) SkP2(W,X) P1(N1).
+28[0:Inp] || equal(R1(U,V),V)** SkP6(U,V) equal(V,V) -> .
+29[0:Inp] || equal(R1(U,V),N1)** SkP6(U,V) equal(V,V) -> .
+30[0:Inp] || equal(N3,N2) iota(U) -> Pde1(N1) P5(R1(U,N1))* P5(skc9).
+31[0:Inp] || equal(N1,N3) iota(U) -> Pde1(N1) P5(R1(U,N1))* P5(skc9).
+32[0:Inp] || SkP3(U,V,W,X)* -> P2(V) equal(R1(X,R1(W,N1)),V)*.
+33[0:Inp] || equal(U,N2) SkP3(V,U,W,X)* -> equal(R1(X,R1(W,N1)),U)*.
+34[0:Inp] || equal(U,U) SkP3(V,U,W,X)* -> equal(R1(X,R1(W,N1)),U)*.
+35[0:Inp] || iota(U) iota(V) -> equal(skf11(V,U),N3)** Pde1(N1) P5(R1(U,N1))* P5(skc9).
+36[0:Inp] || iota(U) iota(V) -> equal(skf12(V,U),N3)** Pde1(N1) P5(R1(U,N1))* P5(skc9).
+37[0:Inp] || Pde1(R1(U,R1(V,N1)))* SkP3(W,X,V,U)* -> equal(R1(U,R1(V,N1)),X)*.
+38[0:Inp] || equal(skf11(U,V),N3)** iota(V) iota(U) -> Pde1(N1) P5(R1(V,N1))* P5(skc9).
+39[0:Inp] || iota(U) iota(V) iota(W) iota(X) -> equal(skf18(W,X,V,U),N1)** P5(skc9).
+40[0:Inp] || Pde1(R1(U,R1(V,N1)))* SkP4(W,X,Y,V,U)* equal(R1(U,R1(V,N1)),Y) -> .
+41[0:Inp] || equal(skf18(U,V,W,X),N1)** iota(X) iota(W) iota(U) iota(V) -> P5(skc9).
+42[0:Inp] || equal(R1(U,R1(V,R1(W,N1))),N1)** SkP3(U,X,W,V)* -> equal(R1(V,R1(W,N1)),X)*.
+43[0:Inp] || equal(R1(U,R1(V,R1(W,N1))),X)* SkP3(U,X,W,V)* -> equal(R1(V,R1(W,N1)),X).
+44[0:Inp] || SkP4(U,V,W,X,Y)* equal(R1(Y,R1(X,N1)),W) -> equal(U,R1(V,R1(Y,R1(X,N1))))*.
+45[0:Inp] || SkP4(U,V,W,X,Y)* equal(R1(Y,R1(X,N1)),W) -> equal(R1(V,R1(Y,R1(X,N1))),N1)**.
+46[0:Inp] || equal(R1(U,R1(V,R1(W,N1))),X)* SkP4(Y,U,X,W,V)* equal(R1(V,R1(W,N1)),X) -> .
+47[0:Inp] || SkP1(U,V,W,X,Y,Z,X1)* -> equal(Z,U) SkP6(V,Z) SkP4(W,X,Z,X1,Y) equal(R1(X1,N1),Z) Pde1(R1(X1,N1)).
+48[0:Inp] || SkP1(U,V,W,X,Y,Z,X1)* -> equal(Z,N2) SkP6(V,Z) SkP4(W,X,Z,X1,Y) equal(R1(X1,N1),Z) Pde1(R1(X1,N1)).
+49[0:Inp] || SkP1(U,V,W,X,Y,Z,X1)* -> equal(U,Z) SkP6(V,Z) SkP4(W,X,Z,X1,Y) equal(R1(X1,N1),Z) Pde1(R1(X1,N1)).
+50[0:Inp] || equal(U,U) SkP1(V,W,X,Y,Z,U,X1)* -> SkP6(W,U) SkP4(X,Y,U,X1,Z) equal(R1(X1,N1),U) Pde1(R1(X1,N1)).
+51[0:Inp] || P5(N1) equal(R1(U,N1),V) SkP0(U,V,W,X)* -> equal(N1,V) Pde1(N1) equal(R1(U,N1),N3) P2(R1(U,N1)) SkP2(W,X) P1(N1).
+52[0:Inp] || P3(N1) equal(N1,N2) P3(R1(U,N1)) equal(R1(U,N1),N1) P1(R1(U,N1))* SkP2(U,V)* equal(N1,N3) -> equal(N1,V) Pde1(N1).
+53[0:Inp] || iota(U) iota(V) iota(W) iota(X) -> equal(skf15(W,X,V,U),N1) Pde1(N1) equal(R1(V,N1),N1) SkP0(X,skf14(W,V,U),W,skf13(V,U))* P5(skc9).
+54[0:Inp] || equal(skf11(U,V),skf11(U,V)) P4(skf11(U,V)) iota(V) iota(U) -> P5(skf11(U,V)) P3(skf11(U,V))* equal(skf11(U,V),N1) Pde1(N1) P5(R1(V,N1)) P5(skc9).
+55[0:Inp] || P5(R1(U,R1(V,R1(W,N1))))* equal(R1(U,R1(V,R1(W,N1))),X)* SkP4(X,U,Y,W,V)* equal(R1(V,R1(W,N1)),Y) -> equal(R1(U,R1(V,R1(W,N1))),Y)*.
+56[0:Inp] || P1(R1(U,R1(V,R1(W,N1)))) iota(X) iota(Y) iota(Z) iota(X1) iota(W) iota(X2) iota(V) iota(U) -> equal(R1(U,R1(V,R1(W,N1))),N2) Pde1(N1) SkP1(skf20(X2,W,V,U,Z,X1,Y,X),skc6,skf19(U,V,W,X2,Z,X1,Y,X),skc7,X2,skf18(Z,X1,Y,X),W)* Pde1(R1(W,N1)) SkP3(skc5,skf18(Z,X1,Y,X),W,V) Pde1(R1(V,R1(W,N1))) P3(R1(U,R1(V,R1(W,N1)))) P5(skc9).
+57[0:Inp] || P1(R1(U,R1(V,R1(W,N1)))) iota(X) iota(Y) iota(Z) iota(X1) iota(W) iota(X2) iota(V) iota(U) -> equal(skf21(U,V,W,X2,Z,X1,Y,X),R1(U,R1(V,R1(W,N1)))) Pde1(N1) SkP1(skf20(X2,W,V,U,Z,X1,Y,X),skc6,skf19(U,V,W,X2,Z,X1,Y,X),skc7,X2,skf18(Z,X1,Y,X),W)* Pde1(R1(W,N1)) SkP3(skc5,skf18(Z,X1,Y,X),W,V) Pde1(R1(V,R1(W,N1))) P3(R1(U,R1(V,R1(W,N1)))) P5(skc9).
+58[0:Inp] || equal(skf21(U,V,W,X,Y,Z,X1,X2),R1(U,R1(V,R1(W,N1)))) P1(R1(U,R1(V,R1(W,N1)))) iota(X2) iota(X1) iota(Y) iota(Z) iota(W) iota(X) iota(V) iota(U) -> Pde1(N1) SkP1(skf20(X,W,V,U,Y,Z,X1,X2),skc6,skf19(U,V,W,X,Y,Z,X1,X2),skc7,X,skf18(Y,Z,X1,X2),W)* Pde1(R1(W,N1)) SkP3(skc5,skf18(Y,Z,X1,X2),W,V) Pde1(R1(V,R1(W,N1))) P3(R1(U,R1(V,R1(W,N1)))) P5(skc9).
+ This is a first-order Non-Horn problem containing equality.
+ This is a problem that contains sort information.
+ The following monadic predicates have finite extensions: iota.
+ Axiom clauses: 58 Conjecture clauses: 0
+ Inferences: IEmS=1 ISoR=1 IEqR=1 IEqF=1 ISpR=1 ISpL=1 IORe=1 IOFc=1 
+ Reductions: RFRew=1 RBRew=1 RFMRR=1 RBMRR=1 RObv=1 RUnC=1 RTaut=1 RSSi=1 RFSub=1 RBSub=1 RAED=1 RCon=1 
+ Extras    : Input Saturation, Dynamic Selection, Full Splitting, Full Reduction,  Ratio: 5, FuncWeight: 1, VarWeight: 1
+ Precedence: R1 > skf21 > skf20 > skf19 > skf10 > skf9 > skf8 > skf18 > skf17 > skf16 > skf15 > skf7 > skf6 > skf5 > skf4 > skf14 > skf3 > skf13 > skf12 > skf11 > skf2 > skf1 > skf0 > Pde1 > P2 > SkP3 > SkP4 > SkP6 > SkP1 > SkP2 > P1 > P3 > P5 > P4 > omega > SkP0 > iota > SkP5 > N1 > N3 > skc9 > skc8 > skc7 > skc6 > skc5 > skc4 > skc3 > skc2 > skc1 > skc0 > N2 > b > a
+ Ordering  : KBO
+Processed Problem:
+
+Worked Off Clauses:
+
+Usable Clauses:
+7[0:Inp] ||  -> iota(b)*.
+5[0:Inp] ||  -> iota(skc5)*.
+4[0:Inp] ||  -> iota(skc6)*.
+3[0:Inp] ||  -> iota(skc7)*.
+2[0:Inp] ||  -> iota(skc8)*.
+6[0:Inp] ||  -> omega(a)*.
+1[0:Inp] ||  -> omega(skc9)*.
+10[0:Inp] ||  -> omega(skf11(U,V))*.
+9[0:Inp] ||  -> omega(skf12(U,V))*.
+8[0:Inp] ||  -> omega(skf13(U,V))*.
+71[0:Con:70.1] iota(U) ||  -> P5(skc9)*.
+11[0:Inp] ||  -> omega(skf14(U,V,W))*.
+15[0:Inp] ||  -> omega(skf15(U,V,W,X))*.
+14[0:Inp] ||  -> omega(skf16(U,V,W,X))*.
+13[0:Inp] ||  -> omega(skf17(U,V,W,X))*.
+12[0:Inp] ||  -> omega(skf18(U,V,W,X))*.
+59[0:Obv:22.2] Pde1(U) || SkP6(V,U)* -> .
+62[0:Rew:60.1,61.0] || SkP6(U,V)* equal(N1,N2) -> .
+64[0:Rew:60.1,63.0] || SkP6(U,V)* equal(N2,V) -> .
+60[0:Obv:25.1] || SkP6(U,V) -> equal(R1(U,V),N2)**.
+20[0:Inp] ||  -> omega(skf19(U,V,W,X,Y,Z,X1,X2))*.
+19[0:Inp] ||  -> omega(skf20(U,V,W,X,Y,Z,X1,X2))*.
+18[0:Inp] ||  -> omega(skf21(U,V,W,X,Y,Z,X1,X2))*.
+21[0:Inp] || SkP2(U,V)* equal(N1,N3) -> equal(V,N1).
+24[0:Inp] || equal(N1,U) equal(N1,V) SkP5(W,U,V)* -> .
+65[0:Obv:34.0] || SkP3(U,V,W,X)* -> equal(R1(X,R1(W,N1)),V)*.
+27[0:Inp] || SkP0(U,V,W,X)* -> P1(N1) SkP2(W,X) equal(V,N1).
+72[0:Rew:45.2,44.2] || equal(R1(U,R1(V,N1)),W) SkP4(X,Y,W,V,U)* -> equal(X,N1).
+73[0:Rew:45.2,46.0] || equal(N1,U) equal(R1(V,R1(W,N1)),U) SkP4(X,Y,U,W,V)* -> .
+40[0:Inp] || Pde1(R1(U,R1(V,N1)))* equal(R1(U,R1(V,N1)),W) SkP4(X,Y,W,V,U)* -> .
+77[0:MRR:76.4,73.0] || P5(N1) equal(N1,U) equal(R1(V,R1(W,N1)),X) SkP4(U,Y,X,W,V)* -> .
+45[0:Inp] || equal(R1(U,R1(V,N1)),W) SkP4(X,Y,W,V,U)* -> equal(R1(Y,R1(U,R1(V,N1))),N1)**.
+74[0:Obv:50.0] || SkP1(U,V,W,X,Y,Z,X1)* -> Pde1(R1(X1,N1)) SkP6(V,Z) equal(R1(X1,N1),Z) SkP4(W,X,Z,X1,Y).
+	Given clause: 7[0:Inp] ||  -> iota(b)*.
+	Given clause: 5[0:Inp] ||  -> iota(skc5)*.
+	Given clause: 4[0:Inp] ||  -> iota(skc6)*.
+	Given clause: 3[0:Inp] ||  -> iota(skc7)*.
+	Given clause: 2[0:Inp] ||  -> iota(skc8)*.
+	Given clause: 6[0:Inp] ||  -> omega(a)*.
+	Given clause: 1[0:Inp] ||  -> omega(skc9)*.
+	Given clause: 10[0:Inp] ||  -> omega(skf11(U,V))*.
+	Given clause: 9[0:Inp] ||  -> omega(skf12(U,V))*.
+	Given clause: 8[0:Inp] ||  -> omega(skf13(U,V))*.
+	Given clause: 71[0:Con:70.1] iota(U) ||  -> P5(skc9)*.
+	Given clause: 78[0:EmS:71.0,2.0] ||  -> P5(skc9)*.
+	Given clause: 11[0:Inp] ||  -> omega(skf14(U,V,W))*.
+	Given clause: 15[0:Inp] ||  -> omega(skf15(U,V,W,X))*.
+	Given clause: 14[0:Inp] ||  -> omega(skf16(U,V,W,X))*.
+	Given clause: 13[0:Inp] ||  -> omega(skf17(U,V,W,X))*.
+	Given clause: 12[0:Inp] ||  -> omega(skf18(U,V,W,X))*.
+	Given clause: 59[0:Obv:22.2] Pde1(U) || SkP6(V,U)* -> .
+	Given clause: 62[0:Rew:60.1,61.0] || SkP6(U,V)* equal(N1,N2) -> .
+	Given clause: 64[0:Rew:60.1,63.0] || SkP6(U,V)* equal(N2,V) -> .
+	Given clause: 60[0:Obv:25.1] || SkP6(U,V) -> equal(R1(U,V),N2)**.
+	Given clause: 20[0:Inp] ||  -> omega(skf19(U,V,W,X,Y,Z,X1,X2))*.
+	Given clause: 19[0:Inp] ||  -> omega(skf20(U,V,W,X,Y,Z,X1,X2))*.
+	Given clause: 18[0:Inp] ||  -> omega(skf21(U,V,W,X,Y,Z,X1,X2))*.
+	Given clause: 21[0:Inp] || SkP2(U,V)* equal(N1,N3) -> equal(V,N1).
+	Given clause: 24[0:Inp] || equal(N1,U) equal(N1,V) SkP5(W,U,V)* -> .
+	Given clause: 65[0:Obv:34.0] || SkP3(U,V,W,X)*+ -> equal(R1(X,R1(W,N1)),V)*.
+	Given clause: 27[0:Inp] || SkP0(U,V,W,X)* -> P1(N1) SkP2(W,X) equal(V,N1).
+	Given clause: 84[1:Spt:27.0,27.2,27.3] || SkP0(U,V,W,X)* -> SkP2(W,X) equal(V,N1).
+	Given clause: 72[0:Rew:45.2,44.2] || equal(R1(U,R1(V,N1)),W) SkP4(X,Y,W,V,U)* -> equal(X,N1).
+	Given clause: 73[0:Rew:45.2,46.0] || equal(N1,U) equal(R1(V,R1(W,N1)),U) SkP4(X,Y,U,W,V)* -> .
+	Given clause: 77[0:MRR:76.4,73.0] || P5(N1) equal(N1,U) equal(R1(V,R1(W,N1)),X) SkP4(U,Y,X,W,V)* -> .
+	Given clause: 40[0:Inp] || Pde1(R1(U,R1(V,N1)))* equal(R1(U,R1(V,N1)),W)+ SkP4(X,Y,W,V,U)* -> .
+	Given clause: 85[0:EqR:40.1] || Pde1(R1(U,R1(V,N1))) SkP4(W,X,R1(U,R1(V,N1)),V,U)* -> .
+	Given clause: 92[0:Rew:60.1,91.1] || SkP6(U,R1(V,N1)) Pde1(N2) SkP4(W,X,N2,V,U)* -> .
+	Given clause: 45[0:Inp] || equal(R1(U,R1(V,N1)),W)+ SkP4(X,Y,W,V,U)* -> equal(R1(Y,R1(U,R1(V,N1))),N1)**.
+	Given clause: 93[0:Rew:60.1,90.1] || SkP6(U,N1) Pde1(R1(V,N2)) SkP4(W,X,R1(V,N2),U,V)* -> .
+	Given clause: 100[0:Rew:60.1,99.2] || SkP6(U,N2) SkP6(V,N1) Pde1(N2) SkP4(W,X,N2,V,U)* -> .
+	Given clause: 88[0:Rew:60.1,87.1] || SkP6(U,R1(V,N1)) Pde1(N2) equal(N2,W) SkP4(X,Y,W,V,U)* -> .
+	Given clause: 94[0:EqR:45.0] || SkP4(U,V,R1(W,R1(X,N1)),X,W)* -> equal(R1(V,R1(W,R1(X,N1))),N1).
+	Given clause: 74[0:Obv:50.0] || SkP1(U,V,W,X,Y,Z,X1)* -> Pde1(R1(X1,N1)) SkP6(V,Z) equal(R1(X1,N1),Z) SkP4(W,X,Z,X1,Y).
+	Given clause: 103[0:Rew:60.1,102.2] || SkP6(U,R1(V,N1)) SkP4(W,X,N2,V,U)* -> equal(R1(X,N2),N1).
+	Given clause: 104[0:Rew:60.1,101.2] || SkP6(U,N1) SkP4(V,W,R1(X,N2),U,X)* -> equal(R1(W,R1(X,N2)),N1).
+	Given clause: 106[0:Rew:60.1,105.3] || SkP6(U,N2) SkP6(V,N1) SkP4(W,X,N2,V,U)* -> equal(R1(X,N2),N1).
+	Given clause: 89[0:Rew:60.1,86.1] || SkP6(U,N1) Pde1(R1(V,N2)) equal(R1(V,N2),W) SkP4(X,Y,W,U,V)* -> .
+	Given clause: 97[0:Rew:60.1,96.3] || SkP6(U,R1(V,N1)) equal(N2,W) SkP4(X,Y,W,V,U)* -> equal(R1(Y,N2),N1).
+	Given clause: 98[0:Rew:60.1,95.3] || SkP6(U,N1) equal(R1(V,N2),W) SkP4(X,Y,W,U,V)* -> equal(R1(Y,R1(V,N2)),N1).
+SPASS V 3.7 
+SPASS beiseite: Completion found.
+Problem: testcon 
+SPASS derived 20 clauses, backtracked 0 clauses, performed 1 splits and kept 61 clauses.
+SPASS allocated 52661 KBytes.
+SPASS spent	0:00:00.08 on the problem.
+		0:00:00.02 for the input.
+		0:00:00.04 for the FLOTTER CNF translation.
+		0:00:00.00 for inferences.
+		0:00:00.00 for the backtracking.
+		0:00:00.00 for the reduction.
+
+
+ The saturated set of worked-off clauses is :
+98[0:Rew:60.1,95.3] || SkP6(U,N1) equal(R1(V,N2),W) SkP4(X,Y,W,U,V)* -> equal(R1(Y,R1(V,N2)),N1).
+97[0:Rew:60.1,96.3] || SkP6(U,R1(V,N1)) equal(N2,W) SkP4(X,Y,W,V,U)* -> equal(R1(Y,N2),N1).
+89[0:Rew:60.1,86.1] || SkP6(U,N1) Pde1(R1(V,N2)) equal(R1(V,N2),W) SkP4(X,Y,W,U,V)* -> .
+106[0:Rew:60.1,105.3] || SkP6(U,N2) SkP6(V,N1) SkP4(W,X,N2,V,U)* -> equal(R1(X,N2),N1).
+104[0:Rew:60.1,101.2] || SkP6(U,N1) SkP4(V,W,R1(X,N2),U,X)* -> equal(R1(W,R1(X,N2)),N1).
+103[0:Rew:60.1,102.2] || SkP6(U,R1(V,N1)) SkP4(W,X,N2,V,U)* -> equal(R1(X,N2),N1).
+74[0:Obv:50.0] || SkP1(U,V,W,X,Y,Z,X1)* -> Pde1(R1(X1,N1)) SkP6(V,Z) equal(R1(X1,N1),Z) SkP4(W,X,Z,X1,Y).
+94[0:EqR:45.0] || SkP4(U,V,R1(W,R1(X,N1)),X,W)* -> equal(R1(V,R1(W,R1(X,N1))),N1).
+88[0:Rew:60.1,87.1] || SkP6(U,R1(V,N1)) Pde1(N2) equal(N2,W) SkP4(X,Y,W,V,U)* -> .
+100[0:Rew:60.1,99.2] || SkP6(U,N2) SkP6(V,N1) Pde1(N2) SkP4(W,X,N2,V,U)* -> .
+93[0:Rew:60.1,90.1] || SkP6(U,N1) Pde1(R1(V,N2)) SkP4(W,X,R1(V,N2),U,V)* -> .
+45[0:Inp] || equal(R1(U,R1(V,N1)),W)+ SkP4(X,Y,W,V,U)* -> equal(R1(Y,R1(U,R1(V,N1))),N1)**.
+92[0:Rew:60.1,91.1] || SkP6(U,R1(V,N1)) Pde1(N2) SkP4(W,X,N2,V,U)* -> .
+85[0:EqR:40.1] || Pde1(R1(U,R1(V,N1))) SkP4(W,X,R1(U,R1(V,N1)),V,U)* -> .
+40[0:Inp] || Pde1(R1(U,R1(V,N1)))* equal(R1(U,R1(V,N1)),W)+ SkP4(X,Y,W,V,U)* -> .
+77[0:MRR:76.4,73.0] || P5(N1) equal(N1,U) equal(R1(V,R1(W,N1)),X) SkP4(U,Y,X,W,V)* -> .
+73[0:Rew:45.2,46.0] || equal(N1,U) equal(R1(V,R1(W,N1)),U) SkP4(X,Y,U,W,V)* -> .
+72[0:Rew:45.2,44.2] || equal(R1(U,R1(V,N1)),W) SkP4(X,Y,W,V,U)* -> equal(X,N1).
+84[1:Spt:27.0,27.2,27.3] || SkP0(U,V,W,X)* -> SkP2(W,X) equal(V,N1).
+65[0:Obv:34.0] || SkP3(U,V,W,X)*+ -> equal(R1(X,R1(W,N1)),V)*.
+24[0:Inp] || equal(N1,U) equal(N1,V) SkP5(W,U,V)* -> .
+21[0:Inp] || SkP2(U,V)* equal(N1,N3) -> equal(V,N1).
+18[0:Inp] ||  -> omega(skf21(U,V,W,X,Y,Z,X1,X2))*.
+19[0:Inp] ||  -> omega(skf20(U,V,W,X,Y,Z,X1,X2))*.
+20[0:Inp] ||  -> omega(skf19(U,V,W,X,Y,Z,X1,X2))*.
+60[0:Obv:25.1] || SkP6(U,V) -> equal(R1(U,V),N2)**.
+64[0:Rew:60.1,63.0] || SkP6(U,V)* equal(N2,V) -> .
+62[0:Rew:60.1,61.0] || SkP6(U,V)* equal(N1,N2) -> .
+59[0:Obv:22.2] Pde1(U) || SkP6(V,U)* -> .
+12[0:Inp] ||  -> omega(skf18(U,V,W,X))*.
+13[0:Inp] ||  -> omega(skf17(U,V,W,X))*.
+14[0:Inp] ||  -> omega(skf16(U,V,W,X))*.
+15[0:Inp] ||  -> omega(skf15(U,V,W,X))*.
+11[0:Inp] ||  -> omega(skf14(U,V,W))*.
+78[0:EmS:71.0,2.0] ||  -> P5(skc9)*.
+8[0:Inp] ||  -> omega(skf13(U,V))*.
+9[0:Inp] ||  -> omega(skf12(U,V))*.
+10[0:Inp] ||  -> omega(skf11(U,V))*.
+1[0:Inp] ||  -> omega(skc9)*.
+6[0:Inp] ||  -> omega(a)*.
+2[0:Inp] ||  -> iota(skc8)*.
+3[0:Inp] ||  -> iota(skc7)*.
+4[0:Inp] ||  -> iota(skc6)*.
+5[0:Inp] ||  -> iota(skc5)*.
+7[0:Inp] ||  -> iota(b)*.
+--------------------------SPASS-STOP------------------------------
